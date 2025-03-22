@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    
+    printf("Indica un número entero y positivo \n");
+    scanf("%d",&n);
+    
+    if (n <= 0)
+    {
+        printf ("El número introducido no es entero y positivo");
+        return 1;
+    }
+    
+    int suma = (n * (n + 1)) / 2;
+    
+    printf("La suma de los primeros %d numeros positivos es: %d\n", n, suma);
+
+    return 0;
+}
