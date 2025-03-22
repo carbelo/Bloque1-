@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() 
+{
+    double masa, cambioTemperatura, energia, kWh, precio;
+
+    printf("Indica la masa del agua en gramos:");
+    scanf("%lf", &masa);
+    
+    printf("Ingrese el cambio de temperatura en grados Celsius: ");
+    scanf("%lf", &cambioTemperatura);
+
+    energia = masa * 4.186 * cambioTemperatura;
+
+    kWh = energia / 3600000;
+
+    precio = kWh * 8.9;
+
+    printf("\nEnergia requerida: %.2f Julios\n", energia);
+    printf("Equivalente en kWh: %.6f kWh\n", kWh);
+    printf("Costo de calentar el agua: %.4f centimos\n", precio);
+
+    return 0;
+}
