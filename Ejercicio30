@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() 
+{
+    double kPa, psi, mmHg, atm;
+    
+    printf("Indica la presion en kilopascales (kPa): ");
+    scanf("%lf", &kPa);
+    
+    psi = kPa * 0.145038;
+    mmHg = kPa * 7.50062;
+    atm = kPa * 0.00986923;
+    
+    printf("\n Equivalencias:\n");
+    printf("Libras por pulgada cuadrada (psi): %.4f\n", psi);
+    printf("Milimetros de mercurio (mmHg): %.4f\n", mmHg);
+    printf("Atmósferas (atm): %.6f\n", atm);
+    return 0;
+}
